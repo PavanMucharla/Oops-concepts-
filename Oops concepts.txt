@@ -1,0 +1,78 @@
+OOPS Concepts:
+	This Focuses on organizing code around real-world entities called objects. These Objects contains both data(attributes) and functionality(Method) that operate on the data. OOP aims to create robust, modular, and reusable code by focusing on the following key concepts:
+1.	Classes: Blueprints for creating objects. They define the attributes and methods that all objects of that class will have. 
+2.	Objects: Instance of class. They contain specific values for their attributes and can execute the methods defined in their class.
+3.	Encapsulation: Combining data and methods into single units, protecting the data direct access and manipulate from the object.
+4.	Inheritance: Allows subclasses to inherit attributes and methods from their parent class, promoting code reuse and specialization.
+5.	Abstraction: Focusing on the essential aspects of an objects while hiding internal details, simplifying the understanding and use of the object.
+6.	Polymorphism: The ability of objects to take on different forms and respond to the same message in different ways depending on their type.
+7.	Data Binding: Associating data with methods within a class, allowing them to operate directly on the data.
+8.	Messaging: Objects communicate with each other by sending and receiving messages (method calls).
+Benefits of using OOP:
+	* Improved code modularity and reusability: Code is organized into well-defined classes, making it easier to understand, maintain, and reuse.
+	* Enhanced clarity and maintainability: OOP encourages a more natural way of thinking about software, making the code easier to understand and reason about.
+	* Reduced complexity in larger projects: OOP helps break down complex systems into smaller, manageable components.
+	* Increased flexibility and adaptability: Inheritance and polymorphism enable building flexible and adaptable applications.
+	
+-----------------------	
+
+Aggregation:
+	Aggregation refers to a relationship between two classes where one class (the aggregate) "has-a" another class (the part) and is responsible for its lifecycle. The part class can exist independently but is typically used within the context of the aggregate class.
+	
+Key characteristics of aggregation:
+	* One-to-many relationship: Typically, one aggregate object references multiple part objects.
+	* Weak ownership: The aggregate class does not necessarily own the part class. The part object can exist and be used outside the context of the aggregate.
+	* Shallow relationship: Changes in the aggregate object do not automatically affect the part object, and vice versa.
+
+Exmaples:
+    * Car and Engine: A car "has-a" engine, but the engine can also be used in other vehicles or machines.
+	* Employee and Address: An employee "has-a" address, but the address can also be associated with other individuals.
+	* University and Department: A university "has-a" department, but the department can be part of another university or institution.
+	
+Advantages of using aggregation:
+	* Promotes code reuse: Part classes can be easily reused in different contexts.
+	* Improves modularity: Aggregates hide the implementation details of their parts, making the code more modular and easier to understand.
+	* Enhances flexibility: Aggregation allows for flexible relationships between objects.
+
+-----------------
+
+Composition:
+	Composition refers to a relationship between two classes where one class (the composite) "contains-a" another class (the component) and has a strong ownership over it. The component class cannot exist independently but relies on the composite class for its lifecycle.
+	
+Key characteristics of composition:
+	* One-to-many or one-to-one relationship: One composite object can contain multiple component objects, or it can contain a single component object.
+	* Strong ownership: The composite class owns the component objects. The component objects are created and destroyed along with the composite object.
+	* Deep relationship: Changes in the composite object directly affect the contained component objects, and vice versa.
+	
+Examples:
+	* Document and Paragraph: A document "contains-a" paragraph, and the paragraph cannot exist independently of the document.
+	* Car and Wheel: A car "contains-a" wheel, and the wheel cannot exist independently of the car.
+
+-----------
+
+Association:
+	Association is a relationship between two or more entities where each entity is independent of the others. In other words, each entity can exist without the other entities.
+	
+Key points:
+	* Loose coupling: Objects can exist independently.
+	* Unidirectional or bidirectional: One-way or two-way relationships.
+	* Multiple associations: A class can have associations with multiple classes.
+	* Cardinality: 1-to-1, 1-to-many, many-to-1, or many-to-many relationships.
+	
+Real-world examples:
+
+	* A student "has-a" teacher (unidirectional).
+	* A book "has-a" publisher (unidirectional).
+	* A customer "has-many" orders (unidirectional).
+	* A course "has-many" students, and a student "has-many" courses (bidirectional).
+	* A city "has-many" streets, and a street "belongs-to" a city (bidirectional).	
+
+	
+
+
+
+
+
+
+
+	
